@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Main from './components/Main'
+
+
 function App() {
 
 
@@ -12,6 +15,7 @@ function App() {
      <div className='box-border m-0 font-Poppins'>
         <Navbar/>
         <Hero/>
+        <Main/>
      </div>
     </>
   )
