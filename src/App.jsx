@@ -13,36 +13,36 @@ import four from "../src/assets/four.webp";
 import Jokes from "./components/Jokes";
 
 function App() {
-  let jokes = [
-    {
-      Setup: "I got my daughter a fridge for her birthday.",
-      Punchline: "I can't wait to see her face light up when she opens it.",
-    },
-    {
-      Setup: "How did the hacker escape the police?",
-      Punchline: " He just ransomware!",
-    },
+  // let jokes = [
+  //   {
+  //     Setup: "I got my daughter a fridge for her birthday.",
+  //     Punchline: "I can't wait to see her face light up when she opens it.",
+  //   },
+  //   {
+  //     Setup: "How did the hacker escape the police?",
+  //     Punchline: " He just ransomware!",
+  //   },
 
-    {
-      Setup: "Why don't pirates travel on mountain roads?",
-      Punchline: "Scurvy.",
-    },
+  //   {
+  //     Setup: "Why don't pirates travel on mountain roads?",
+  //     Punchline: "Scurvy.",
+  //   },
 
-    {
-      Punchline: "Swarm.",
-    },
-    {
-      Setup: "What's the best thing about Switzerland?",
-      Punchline: "I don't know, but the flag is a big plus!",
-    },
-  ];
+  //   {
+  //     Punchline: "Swarm.",
+  //   },
+  //   {
+  //     Setup: "What's the best thing about Switzerland?",
+  //     Punchline: "I don't know, but the flag is a big plus!",
+  //   },
+  // ];
 
-  const jokeElements = jokes.map(joke => {
-   return <Jokes setup={joke.Setup} punchline={joke.Punchline}/>
-  })
+  // const jokeElements = jokes.map(joke => {
+  //  return <Jokes setup={joke.Setup} punchline={joke.Punchline}/>
+  // })
   return (
     <>
-      <div className="box-border m-0 font-Poppins">
+      <div className="box-border m-0 font-Poppins w-full">
         <Navbar />
         <Hero />
         <Main />

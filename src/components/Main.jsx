@@ -2,6 +2,7 @@ import Card from "./Card";
 import sport from "../assets/sport.png";
 import bike from "../assets/bike.png";
 import wed from "../assets/wed.png";
+import mountbike from '../assets/mountbike.jpeg'
 
 const Main = () => {
   const data = [
@@ -39,41 +40,47 @@ const Main = () => {
       description:
         "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
       price: 50,
-      coverImg: bike,
+      coverImg: mountbike,
       stats: {
         rating: 4.8,
         reviewCount: 2,
       },
       location: "Norway",
       openSpots: 3,
-    },
+    }
+    ,
+    {
+      id: 4,
+      title: "Group Mountain Biking",
+      description:
+        "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
+      price: 50,
+      coverImg: mountbike,
+      stats: {
+        rating: 4.8,
+        reviewCount: 2,
+      },
+      location: "Norway",
+      openSpots: 3,
+    }
   ];
 
-  const cardElements = data.map((card) => {
-   return (
-   <Card
-      img={card.coverImg}
-      title={card.title}
-      rating={card.stats.rating}
-      reviewCount={card.stats.reviewCount}
-      location={card.location}
-      price={card.price}
-    />)
-  })
-
   return (
-    <div className="px-10 flex justify-between" >
+    <div className="px-20  flex justify-between gap-8 flex-nowrap overflow-x-scroll w-full min-h-screen  " >
       {
 
 data.map((card) => {
   return (
   <Card
-     img={card.coverImg}
-     price={card.price}
-     rating={card.stats.rating}
-     reviewCount={card.stats.reviewCount}
-     location={card.location}
-     title={card.title}
+     key={card.id}
+     {...card}
+    //  img={card.coverImg}
+    //  price={card.price}
+    //  rating={card.stats.rating}
+    //  reviewCount={card.stats.reviewCount}
+    //  location={card.location}
+    //  title={card.title}
+    //  openSpots={card.openSpots}
      
    />)
  })
